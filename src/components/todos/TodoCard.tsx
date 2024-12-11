@@ -11,7 +11,12 @@ const TodoCard = ({ item, cardHeight = 60 }: TodoCardProps) => {
   const dispatch = useAppDispatch();
 
   return (
-    <Surface style={[styles.surface, { height: cardHeight }]} elevation={5}>
+    <Surface
+      style={[
+        styles.surface,
+        { height: cardHeight, opacity: item.completed ? 0.5 : 1 },
+      ]}
+      elevation={4}>
       <View style={styles.textContainer}>
         <Checkbox
           status={item.completed ? 'checked' : 'unchecked'}
