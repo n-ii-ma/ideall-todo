@@ -4,7 +4,7 @@ import { Text } from 'react-native-paper';
 const ListEmpty = () => {
   return (
     <View style={styles.container}>
-      <Text variant="titleMedium">No todos available</Text>
+      <Text variant="titleMedium">No Todos Available</Text>
     </View>
   );
 };
