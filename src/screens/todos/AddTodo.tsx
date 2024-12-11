@@ -17,7 +17,9 @@ const AddTodo = () => {
   /** Callback to add a new todo */
   const handleAddTodo = () => {
     if (title) {
-      dispatch(todoAdded({ id: nanoid(), title, completed: false }));
+      dispatch(
+        todoAdded({ id: nanoid(), title: title.trim(), completed: false }),
+      );
 
       // Empty input and navigate to the `Todo List` screen
       setTitle('');
