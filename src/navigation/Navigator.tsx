@@ -1,6 +1,6 @@
 import { createStaticNavigation } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import TabBar from './TabBar';
 import TodoList from '@/screens/todos/TodoList';
@@ -23,7 +23,7 @@ export const BottomTabNavigator = createBottomTabNavigator({
         headerShown: false,
         tabBarLabel: 'Todo List',
         tabBarIcon: ({ color, size }) => (
-          <Icon name="checklist" size={size} color={color} />
+          <Icon name="format-list-checks" size={size} color={color} />
         ),
       },
     },
@@ -33,7 +33,7 @@ export const BottomTabNavigator = createBottomTabNavigator({
         headerShown: false,
         tabBarLabel: 'Add Todo',
         tabBarIcon: ({ color, size }) => (
-          <Icon name="playlist-add" size={size} color={color} />
+          <Icon name="playlist-plus" size={size} color={color} />
         ),
       },
     },
