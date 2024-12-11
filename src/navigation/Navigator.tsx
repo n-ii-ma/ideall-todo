@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import TabBar from './TabBar';
 import TodoList from '@/screens/todos/TodoList';
-import TodoInput from '@/screens/todos/TodoInput';
+import AddTodo from '@/screens/todos/AddTodo';
 
 // Bottom tabs
 export const BottomTabNavigator = createBottomTabNavigator({
@@ -28,7 +28,7 @@ export const BottomTabNavigator = createBottomTabNavigator({
       },
     },
     TodoInput: {
-      screen: TodoInput,
+      screen: AddTodo,
       options: {
         headerShown: false,
         tabBarLabel: 'Add Todo',
